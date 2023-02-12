@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Navigation from "./Nav";
+import Navigation from "./Nav/NavTabs";
 
 export default function Header({ handlePageChange, pages, currentPage }) {
   return (

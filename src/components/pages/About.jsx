@@ -1,5 +1,5 @@
 import React from "react";
-import shmuuImg from "../assets/visuals/shmuu";
+import shmuuImg from "../../assets/visuals/shmuu.png";
 
 const styles = {
   myimg: {
