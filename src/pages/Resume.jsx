@@ -1,5 +1,5 @@
 import React from "react";
-// import resumeImg from
+import resumeImg from "../assets/resume-screenshot";
 
 const styles = {
     img: {
@@ -28,14 +28,14 @@ export default function Resume() {
                 <div className="row">
                     <div className="d-flex justify center">
                         <a
-                        href=
-                        // addresume link"// 
-                        >
+                        href="
+                        https://docs.google.com/document/d/0B7CxzO5R_bT3SkJuajJhSDhRY3Y5QVlqRS1Ka0ZsLU8wQk5n/edit?usp=sharing&ouid=114000077581619497771&resourcekey=0-d9M5rrXSDN6SVje9AqQeVw&rtpof=true&sd=true
+                        ">
                         <img src={resumeImg} alt="resume" style={styles.img} />    
                         </a>
                     </div>
                 </div>
             </div>
         </>
-    )
+    );
 }
