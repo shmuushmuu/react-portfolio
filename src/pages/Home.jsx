@@ -1,5 +1,5 @@
 import React from "react";
-import shmuu from "../../assets/images/shmuu.jpeg";
+import shmuuImg from "../assets/visuals/shmuu";
 
 const styles = {
   myimg: {
@@ -22,7 +22,7 @@ export default function Home() {
       <div className="min-vh-100">
         <div className="row m-2 p-3">
           <div className="d-flex justify-content-center mb-3">
-            <img src={myself} alt="shmuu" style={styles.shmuu} />
+            <img src={shmuuImg} alt="shmuu" style={styles.shmuu} />
           </div>
           <div
             className="d-flex justify-content-evenly text-center"
