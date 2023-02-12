@@ -1,35 +1,35 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
+import React, { useState } from 'react';
+import NavTabs from './NavTabs';
+import Home from './pages/Home';
+import Resume from './pages/Resume';
+import Projects from './pages/Projects';
+import Contact from './pages/Contact';
 
-function App() {
-  const [count, setCount] = useState(0)
+export default function PortfolioContainer() {
+  const [currentPage, setCurrentPage] = useState('Home');
+
+
+  const renderPage = () => { //Opportunity
+    if (currentPage === 'Home') {
+      return <Home />;
+    }
+    if (currentPage === 'Resume') {
+      return <Resume />;
+    }  
+    if (currentPage === 'Projects') {
+      return <Projects />;
+    }
+    if (currentPage === 'Contact') {
+      return <Contact />;
+    }
+  };
+
+  const handlePageChange = (page) => setCurrentPage(page);
 
   return (
-    <div className="App">
-      <div>
-      <h1>{import.meta.env.BASE_URL}</h1>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={`${import.meta.env.BASE_URL}{"/vite.svg"}`} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+    <div>
+      <NavTabs currentPage={currentPage} handlePageChange={handlePageChange} />
+      {renderPage()}
     </div>
-  )
+  );
 }
-
-export default App
