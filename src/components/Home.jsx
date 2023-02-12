@@ -1,7 +1,7 @@
 import React, { useReact} from "react";
 import Header from "./Header";
 import Footer from "./Footer";
-import pageComponents from "./pages";
+import pageComponents from "./pages/index";
 
 const pages = Object.keys(pageComponents);
 

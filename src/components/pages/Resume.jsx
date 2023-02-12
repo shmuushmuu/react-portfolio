@@ -1,5 +1,5 @@
 import React from "react";
-import resumeImg from "../assets/images/resume-screenshot";
+import resumeImg from "../../assets/visuals/resume-screenshot.png";
 
 const styles = {
     img: {
