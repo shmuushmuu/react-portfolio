@@ -6,7 +6,7 @@ export default function Contact() {
     <div>
       <h1>Contact Page</h1>
       <p>
-        E-mail: samfcraig@gmail.com
+        LinkedIn: samfcraig 
         gitHub: shmuushmuu
         Instagram: shmuushmuu
       </p>

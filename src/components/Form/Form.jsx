@@ -5,7 +5,7 @@ import { checkPassword, validateEmail } from '../../utils/helpers';
 
 function Form() {
   const [email, setEmail] = useState('');
-  const [userName, setFirstName] = useState('');
+  const [firstName, setFirstName] = useState('');
   const [message, setMessage] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
 
