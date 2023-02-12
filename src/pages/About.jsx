@@ -13,7 +13,7 @@ const styles = {
   },
 };
 
-export default function Home() {
+export default function About() {
   return (
     <>
       <div className="row m-2 p-3">
